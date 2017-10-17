@@ -13,8 +13,8 @@
 		696346131F95EBF800806B61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696346111F95EBF800806B61 /* Main.storyboard */; };
 		696346151F95EBF800806B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696346141F95EBF800806B61 /* Assets.xcassets */; };
 		696346181F95EBF800806B61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696346161F95EBF800806B61 /* LaunchScreen.storyboard */; };
-		696346211F95EC1800806B61 /* WWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 696346201F95EC1800806B61 /* WWActionSheet.m */; };
-		696346241F95EF3E00806B61 /* UIView+WWHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 696346231F95EF3E00806B61 /* UIView+WWHelp.m */; };
+		6963462C1F95F4E500806B61 /* UIView+WWHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 696346291F95F4E500806B61 /* UIView+WWHelp.m */; };
+		6963462D1F95F4E500806B61 /* WWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6963462B1F95F4E500806B61 /* WWActionSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		696346141F95EBF800806B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		696346171F95EBF800806B61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		696346191F95EBF800806B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6963461F1F95EC1800806B61 /* WWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWActionSheet.h; sourceTree = "<group>"; };
-		696346201F95EC1800806B61 /* WWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWActionSheet.m; sourceTree = "<group>"; };
-		696346221F95EF3E00806B61 /* UIView+WWHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WWHelp.h"; sourceTree = "<group>"; };
-		696346231F95EF3E00806B61 /* UIView+WWHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WWHelp.m"; sourceTree = "<group>"; };
+		696346281F95F4E500806B61 /* UIView+WWHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WWHelp.h"; sourceTree = "<group>"; };
+		696346291F95F4E500806B61 /* UIView+WWHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WWHelp.m"; sourceTree = "<group>"; };
+		6963462A1F95F4E500806B61 /* WWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWActionSheet.h; sourceTree = "<group>"; };
+		6963462B1F95F4E500806B61 /* WWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWActionSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,7 @@
 		696346071F95EBF800806B61 /* WWActionSheetSample */ = {
 			isa = PBXGroup;
 			children = (
+				696346271F95F4E500806B61 /* WWActionSheet */,
 				6963460B1F95EBF800806B61 /* AppDelegate.h */,
 				6963460C1F95EBF800806B61 /* AppDelegate.m */,
 				6963460E1F95EBF800806B61 /* ViewController.h */,
@@ -73,10 +74,6 @@
 				696346161F95EBF800806B61 /* LaunchScreen.storyboard */,
 				696346191F95EBF800806B61 /* Info.plist */,
 				696346081F95EBF800806B61 /* Supporting Files */,
-				6963461F1F95EC1800806B61 /* WWActionSheet.h */,
-				696346201F95EC1800806B61 /* WWActionSheet.m */,
-				696346221F95EF3E00806B61 /* UIView+WWHelp.h */,
-				696346231F95EF3E00806B61 /* UIView+WWHelp.m */,
 			);
 			path = WWActionSheetSample;
 			sourceTree = "<group>";
@@ -87,6 +84,17 @@
 				696346091F95EBF800806B61 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		696346271F95F4E500806B61 /* WWActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				696346281F95F4E500806B61 /* UIView+WWHelp.h */,
+				696346291F95F4E500806B61 /* UIView+WWHelp.m */,
+				6963462A1F95F4E500806B61 /* WWActionSheet.h */,
+				6963462B1F95F4E500806B61 /* WWActionSheet.m */,
+			);
+			path = WWActionSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696346241F95EF3E00806B61 /* UIView+WWHelp.m in Sources */,
-				696346211F95EC1800806B61 /* WWActionSheet.m in Sources */,
 				696346101F95EBF800806B61 /* ViewController.m in Sources */,
+				6963462D1F95F4E500806B61 /* WWActionSheet.m in Sources */,
+				6963462C1F95F4E500806B61 /* UIView+WWHelp.m in Sources */,
 				6963460D1F95EBF800806B61 /* AppDelegate.m in Sources */,
 				6963460A1F95EBF800806B61 /* main.m in Sources */,
 			);
